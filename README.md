@@ -1,27 +1,21 @@
 # TechWorld
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.0.
+Então, essa é a primeira versão do TechWorld, o TechWorld é um CRUD feito em Angular + Sass.
 
-## Development server
+## Como foi desenvolvido
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Tive a brilhante ideia, ou não tão brilhante assim, de não usar o JSON server como banco de dados.
+Sei que tem como salvar info no localStorage e pensei que fosse uma boa ideia usar o LocalStorage para salvar as informações. Funciona? funciona! mas acho que não valeu o tempo que passei pesquisando.
 
-## Code scaffolding
+Junto com o "fake-backend.ts" interceptando as requisições http, tem dado conta do recado.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+O Jason Watmore me ajudou muito com esse projeto, os tutoriais dele são incriveis confere lá: https://jasonwatmore.com/
 
-## Build
+### Reactive Forms Reactive Forms Reactive Forms Reactive Forms Reactive Forms PRA TODO LADO!!!
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+O próximo passo (depois de colocar um metodo "update", isso mesmo, é um CRUD sem "update") é com certeza fazer um componente de formulario reusavel. Aprender mais sobre lazy loading também pode ser uma boa
 
-## Running unit tests
+## highlights
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![validators](https://media2.giphy.com/media/LnR5xZcLyMXXzQAyni/giphy.gif)
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
