@@ -28,3 +28,4 @@ O próximo passo (depois de colocar um metodo "update", isso mesmo, é um CRUD s
 
 ![validators +](https://github.com/Kiryuss/techWorld/blob/master/src/assets/rdm/TechWorld-Google-Chrome-2021-01-26-00-37-47.gif?raw=true)
 
+As validações foi algo que gastei um tempo aprendendo, o usuário VAI saber se não estiver dando certo.
