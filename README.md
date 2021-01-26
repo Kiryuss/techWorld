@@ -4,12 +4,12 @@ Então, essa é a primeira versão do TechWorld, o TechWorld é um CRUD feito em
 
 # Testando localmente
 
-`<addr>`
+```
     git clone
     cd techWorld
     npm i
     ng serve || npm start
-`<addr>`
+```
 
 ## Como foi desenvolvido
 
