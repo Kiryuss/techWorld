@@ -2,6 +2,15 @@
 
 Então, essa é a primeira versão do TechWorld, o TechWorld é um CRUD feito em Angular + Sass.
 
+# Testando localmente
+
+`<addr>`
+    git clone
+    cd techWorld
+    npm i
+    ng serve || npm start
+`<addr>`
+
 ## Como foi desenvolvido
 
 Tive a brilhante ideia, ou não tão brilhante assim, de não usar o JSON server como banco de dados.
@@ -17,5 +26,5 @@ O próximo passo (depois de colocar um metodo "update", isso mesmo, é um CRUD s
 
 ## highlights
 
-![validators](https://media2.giphy.com/media/LnR5xZcLyMXXzQAyni/giphy.gif)
+![validators +](https://media2.giphy.com/media/LnR5xZcLyMXXzQAyni/giphy.gif)
 
