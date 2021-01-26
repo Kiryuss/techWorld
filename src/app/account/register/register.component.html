@@ -1,0 +1,61 @@
+<div id="container">
+    <div id="content">
+        <div id="formContent">
+            <form [formGroup]='form' autocomplete="off">
+                Nome
+                <div class="myInput">
+                    <input type="text" formControlName="firstName" > 
+                    <span *ngIf="firstName.dirty && firstName.touched">
+                        <i class="fa fa-check" style="font-size: 20px;" [ngClass]="hasError(firstName)"></i>
+                    </span>
+                </div>
+                Ultimo nome
+                <div class="myInput">
+                    <input type="text" formControlName="lastName"  >
+                    <span *ngIf="lastName.dirty && lastName.touched">
+                        <i class="fa fa-check" style="font-size: 20px;" [ngClass]="hasError(lastName)"></i>
+                    </span>
+                </div>
+                Login
+                <div class="myInput">
+                    <input type="text" formControlName="username" >
+                    <span *ngIf="username.dirty && username.touched">
+                        <i class="fa fa-check" style="font-size: 20px;" [ngClass]="hasError(username)"></i>
+                    </span>
+                </div>
+
+                Senha
+                <div class="myInput">
+                    <input type="password" formControlName="password" >
+                <span *ngIf="password.dirty && password.touched">
+                    <i  class="fa fa-check" style="font-size: 20px;" [ngClass]="hasError(password)"></i>
+                </span>
+                </div>
+                
+                Celulares
+                <div class="myInput">
+                    <select type="" formControlName="select" >
+                        <option value=""></option>
+                        <option *ngFor="let i of [1,2,3,4,5,6,7,8,9,10]">{{i}}</option>
+                    </select>
+                </div>
+
+                Marca
+
+                <div class="myInput">
+                    <input type="radio" name="marca" value="sansung" id="sansumg" formControlName="marca">
+                    <label for="samsung">Samsung</label>
+                    <input type="radio" name="marca" value="iphone"  id="iphone" formControlName="marca">
+                    <label for="iphone">Iphone</label>
+                    <input type="radio" name="marca" value="xiaomi"  id="xiaomi" formControlName="marca">
+                    <label for="xiaomi">Xiaomi</label>
+                </div>
+
+                <button type="submit" [disabled]="loading" (click)="onSubmit()" (click)="showToaster()">Cadastrar</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Feito com <i class="fa fa-heart" style="color: red;"></i> por Guilherme Souza</p> 
+    </footer>
+</div>

@@ -1,0 +1,31 @@
+<div id="container" >
+    <div id="content">
+        <div id="formContent">
+            <img src="/assets/logo.svg" alt="logo">
+            <form [formGroup]="myForm">
+    
+                <div class="myInput">
+                    <input type="text" placeholder="Login" formControlName="login" >
+                    <span id="userIcon">
+                        <i class="fa fa-user" [ngClass]="hasError(login)"  style="font-size: 20px;"></i>
+                    </span>
+                </div>            
+                <div class="myInput">
+                    <span id="eyeIcon"  (click)="hide = !hide">
+                        <i class="{{hide ? 'fa fa-eye-slash' :  'fa fa-eye'}}" style="font-size: 20px;"></i>
+                    </span>
+                    <input [type]="hide ? 'password' : 'text'"  placeholder="Senha" formControlName="password" required>
+                    <span id="lockIcon">
+                        <i class="fa fa-lock " [ngClass]="hasError(password!)"  style="font-size: 20px"></i>
+                    </span>
+                </div>
+               
+                <button type="submit" [disabled]="loading" (click)="onSubmit()" (click)="showToaster()" >Entrar</button>
+    
+            </form>
+           <p>Não tem uma conta? <a routerLink="../register">Cadastre-se</a></p> 
+        </div>
+    </div>
+    <div id="background"></div>
+</div>
+

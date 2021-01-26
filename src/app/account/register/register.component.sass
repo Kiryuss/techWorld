@@ -1,0 +1,88 @@
+#container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    width: 100%
+    height: 100vh
+    background-color:#2e3b84
+    color: #f2f2f2
+
+    #content
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 100%
+        height: 100%
+
+        #formContent
+            display: flex
+            align-items: center          
+            width: 100%
+            min-width: 30%
+            height: 65%
+            border-radius: 10px
+
+
+            form
+                display: flex
+                align-items: center
+                justify-content: flex-start
+                width: 100%
+                flex-direction: column
+                
+
+            .myInput
+                background: #f2f2f2
+                border-radius: 10px
+                padding: 5px
+                border: 2px solid white
+                color: #666360
+                display: flex
+                align-items: center
+                justify-content: center
+                position: relative
+                margin: 5px 0 35px 0 
+                width: 30%
+
+                input
+                    background: transparent
+                    width: 90%
+                    outline: none
+                    border: none
+
+                select
+                    background: transparent
+                    width: 90%
+                    outline: none
+                    border: none
+    
+        button
+            padding: 15px 15px
+            border-radius: 10px
+            outline: none
+            border: none
+            background-color: #239e42
+            color: #f2f2f2
+            cursor: pointer
+            transition: background ease 0.2s
+
+        button:hover
+            background-color: #1c7d34
+
+    footer
+        position: fixed
+        bottom: 0
+        right: 0
+        width: 100%
+        height: 3vh
+        background: #2e3b84
+        display: flex
+        align-items: flex-end
+        justify-content: flex-end
+
+.greenColor
+    color: green
+
+.redColor
+    color: #DA3015
